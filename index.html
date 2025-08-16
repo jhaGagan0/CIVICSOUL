@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CivicSoul - The Voice of Every Citizen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Floating Background Elements -->
+    <div class="floating-elements">
+        <div class="floating-element floating-element-1"></div>
+        <div class="floating-element floating-element-2"></div>
+        <div class="floating-element floating-element-3"></div>
+        <div class="floating-element floating-element-4"></div>
+        <div class="floating-element floating-element-5"></div>
+    </div>
+
+    <!-- FIXED: Theme Toggle - Left Bottom Corner -->
+    <button id="theme-toggle" class="theme-toggle-floating" aria-label="Toggle dark/light mode">
+        <div class="toggle-inner">
+            <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"></circle>
+                <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+            </svg>
+            <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+            </svg>
+        </div>
+    </button>
+
+    <!-- FIXED: Navigation - Proper Dark Mode Support -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- NAVBAR LOGO -->
+            <div class="nav-brand">
+                <img src="logo.png" alt="CivicSoul Logo" style="height:32px;vertical-align:middle;margin-right:8px;">
+                <h2>CivicSoul</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#impact" class="nav-link">Impact</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7XIcUKFqNiLG83xGWfuiQFB5vkgcRUYXPotWnqJvlSEqdmg/viewform?usp=send_form" 
+                   target="_blank" class="btn btn--primary nav-cta pulse-glow cta-button">Register Complaint</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1" data-aos="fade-up" data-aos-delay="100"></div>
+            <div class="shape shape-2" data-aos="fade-down" data-aos-delay="200"></div>
+            <div class="shape shape-3" data-aos="fade-left" data-aos-delay="300"></div>
+            <div class="shape shape-4" data-aos="fade-right" data-aos-delay="400"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="hero-title gradient-text">The Voice of Every Citizen</h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">AI-powered civic engagement platform empowering citizens to build better communities through streamlined municipal complaint management.</p>
+                <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7XIcUKFqNiLG83xGWfuiQFB5vkgcRUYXPotWnqJvlSEqdmg/viewform?usp=send_form" 
+                       target="_blank" class="btn btn--primary btn--lg pulse-glow cta-button">Get Started</a>
+                    <a href="#features" class="btn btn--outline btn--lg">Learn More</a>
+                </div>
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
+                    <div class="stat" data-counter="1000">
+                        <div class="stat-value" data-target="1000">0</div>
+                        <div class="stat-label">Complaints Resolved</div>
+                    </div>
+                    <div class="stat" data-counter="75">
+                        <div class="stat-value" data-target="75">0</div>
+                        <div class="stat-label">Cities Covered</div>
+                    </div>
+                    <div class="stat" data-counter="95">
+                        <div class="stat-value" data-target="95">0</div>
+                        <div class="stat-label">Success Rate</div>
+                    </div>
+                    <div class="stat" data-counter="24">
+                        <div class="stat-value" data-target="24">0</div>
+                        <div class="stat-label">Hour Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="gradient-text">Powerful AI-Driven Features</h2>
+                <p>Experience the future of civic engagement with intelligent automation and real-time tracking</p>
+            </div>
+            <div class="features-grid">
+                <!-- AI-Powered Email Agent -->
+                <div class="feature-card card-3d" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI-Powered Email Agent</h3>
+                    <p>Claude AI reads your complaint and generates professional, formal emails tailored to the right municipal authority.</p>
+                </div>
+                <!-- Smart Auto-Routing -->
+                <div class="feature-card card-3d" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Smart Auto-Routing</h3>
+                    <p>Automatically maps complaints to relevant departments based on location and issue type for faster resolution.</p>
+                </div>
+                <!-- Live Complaint Dashboard -->
+                <div class="feature-card card-3d" data-aos="fade-up" data-aos-delay="300" style="position:relative;">
+                    <span class="feature-badge badge-progress">Under Progress</span>
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Live Complaint Dashboard</h3>
+                    <p>Personal dashboard to track all complaints in real-time with status updates and progress monitoring.</p>
+                </div>
+                <!-- Smart Notifications -->
+                <div class="feature-card card-3d" data-aos="fade-up" data-aos-delay="400" style="position:relative;">
+                    <span class="feature-badge badge-soon">Coming Soon</span>
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Smart Notifications</h3>
+                    <p>Get instant alerts when complaints are acknowledged, forwarded, or resolved through multiple channels.</p>
+                </div>
+                <!-- Mobile-First Design -->
+                <div class="feature-card card-3d" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile-First Design</h3>
+                    <p>Fully responsive platform that works seamlessly across all devices for maximum accessibility.</p>
+                </div>
+                <!-- Transparency & Security -->
+                <div class="feature-card card-3d feature-card-faded" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Transparency & Security</h3>
+                    <p>Complete transparency with secure tracking of every step in your complaint journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="gradient-text">How CivicSoul Works</h2>
+                <p>Simple steps to make your voice heard and create positive change in your community</p>
+            </div>
+            <div class="steps-container">
+                <div class="step" data-aos="fade-right" data-aos-delay="100">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Submit Your Complaint</h3>
+                        <p>Fill out our simple form with details about your civic issue. Upload photos, add location, and describe the problem clearly.</p>
+                    </div>
+                    <div class="step-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                </div>
+                <div class="step" data-aos="fade-left" data-aos-delay="200">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>AI Processing & Routing</h3>
+                        <p>Our Claude AI analyzes your complaint, determines the relevant department, and creates a professional email automatically.</p>
+                    </div>
+                    <div class="step-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                </div>
+                <div class="step" data-aos="fade-right" data-aos-delay="300">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Department Notification</h3>
+                        <p>The formal email is sent to the appropriate municipal department with all necessary details and documentation.</p>
+                    </div>
+                    <div class="step-icon">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                </div>
+                <div class="step" data-aos="fade-left" data-aos-delay="400">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Track Progress</h3>
+                        <p>Monitor your complaint status in real-time through your personal dashboard. Get updates via email and SMS.</p>
+                    </div>
+                    <div class="step-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="impact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="gradient-text">Real Impact, Real Results</h2>
+                <p>See how CivicSoul is transforming communities across India</p>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="impact-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Street Light Revolution</h3>
+                    <p>In Gurgaon, 200+ street lights were repaired within a month using CivicSoul's efficient routing system.</p>
+                    <div class="impact-metric">200+ lights fixed</div>
+                </div>
+                <div class="impact-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="impact-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Water Crisis Solved</h3>
+                    <p>Helped resolve water shortage affecting 5000+ families in Noida through coordinated complaint management.</p>
+                    <div class="impact-metric">5000+ families helped</div>
+                </div>
+                <div class="impact-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="impact-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Waste Management Success</h3>
+                    <p>Streamlined garbage collection complaints across 15 societies, improving cleanliness ratings by 80%.</p>
+                    <div class="impact-metric">80% improvement</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="gradient-text">About CivicSoul</h2>
+                <p>Empowering citizens to build better communities through AI-powered civic engagement</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h3>Bridging Citizens and Government</h3>
+                    <p>CivicSoul has established partnerships with municipal corporations across India, creating a seamless communication channel between citizens and government departments.</p>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-check"></i> Direct integration with municipal systems</li>
+                        <li><i class="fas fa-check"></i> Real-time status updates from departments</li>
+                        <li><i class="fas fa-check"></i> Automated escalation for delayed responses</li>
+                        <li><i class="fas fa-check"></i> Performance analytics for better governance</li>
+                    </ul>
+                </div>
+                <div class="about-stats" data-aos="fade-left">
+                    <div class="stats-grid">
+                        <div class="stat-card" data-aos="flip-up" data-aos-delay="100">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-number" data-target="25000">0</div>
+                            <div class="stat-text">Active Citizens</div>
+                        </div>
+                        <div class="stat-card" data-aos="flip-up" data-aos-delay="200">
+                            <div class="stat-icon">
+                                <i class="fas fa-city"></i>
+                            </div>
+                            <div class="stat-number" data-target="120">0</div>
+                            <div class="stat-text">Partner Cities</div>
+                        </div>
+                        <div class="stat-card" data-aos="flip-up" data-aos-delay="300">
+                            <div class="stat-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="stat-number" data-target="15000">0</div>
+                            <div class="stat-text">Issues Resolved</div>
+                        </div>
+                        <div class="stat-card" data-aos="flip-up" data-aos-delay="400">
+                            <div class="stat-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="stat-number" data-target="72">0</div>
+                            <div class="stat-text">Avg Response Hours</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="gradient-text">Get in Touch</h2>
+                <p>Have questions, suggestions, or need assistance? We're here to help you make your voice heard</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item" data-aos="fade-right" data-aos-delay="100">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <a href="mailto:Civicsoul78@gmail.com">Civicsoul78@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item" data-aos="fade-right" data-aos-delay="200">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div>
+                            <h4>GitHub Community</h4>
+                            <a href="https://github.com/RajanSita" target="_blank">github.com/RajanSita</a>
+                        </div>
+                    </div>
+                    <div class="contact-item" data-aos="fade-right" data-aos-delay="300">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>24/7 Support</h4>
+                            <p>Always here to help you</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-cta" data-aos="fade-left" data-aos-delay="200">
+                    <h3>Ready to Make a Difference?</h3>
+                    <p>Join thousands of citizens using CivicSoul to improve their communities</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7XIcUKFqNiLG83xGWfuiQFB5vkgcRUYXPotWnqJvlSEqdmg/viewform?usp=send_form" 
+                       target="_blank" class="btn btn--primary btn--lg pulse-glow cta-button">Start Your Complaint</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FIXED: Enhanced Team Section - Bottom-Right with Social Links -->
+    <div class="team-section-compact">
+        <div class="team-toggle" id="team-toggle">
+            <div class="team-header">
+                <div>
+                    <h4>ByteArchitects Group</h4>
+                    <span>VIPS New Delhi • IBM Summer Internship</span>
+                </div>
+                <i class="fas fa-chevron-up team-arrow"></i>
+            </div>
+        </div>
+        <div class="team-content" id="team-content">
+            <div class="team-members-title">Group Members</div>
+            <div class="team-grid-compact">
+                <div class="team-member-compact">
+                    <div class="member-info">
+                        <span class="member-name">Rajan</span>
+                        <span class="member-role">Web Developer</span>
+                    </div>
+                    <div class="member-social">
+                        <a href="https://www.linkedin.com/in/rajan-sita-110b97347/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/RajanSita" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-member-compact">
+                    <div class="member-info">
+                        <span class="member-name">Ayushi Kapoor</span>
+                        <span class="member-role">Concept & Research Lead</span>
+                    </div>
+                    <div class="member-social">
+                        <a href="https://www.linkedin.com/in/ayushi-kapoor-934ab9329/" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/AyushiKapoorrr" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-member-compact">
+                    <div class="member-info">
+                        <span class="member-name">Gagan Jha</span>
+                        <span class="member-role">AI Developer</span>
+                    </div>
+                    <div class="member-social">
+                        <a href="https://www.linkedin.com/in/gaganjha18/" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/jhaGagan0" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-member-compact">
+                    <div class="member-info">
+                        <span class="member-name">Samadrita Mukherjee</span>
+                        <span class="member-role">Presentation & Visual Lead</span>
+                    </div>
+                    <div class="member-social">
+                        <a href="https://www.linkedin.com/in/samadrita-mukherjee-121875330/" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Samadrita-Mukherjee" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Professional Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-brand">
+                    <!-- FOOTER LOGO -->
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="CivicSoul Logo" style="height:32px;vertical-align:middle;margin-right:8px;">
+                        <h3>CivicSoul</h3>
+                    </div>
+                    <p>Empowering citizens to build better communities through AI-powered civic engagement and transparent governance.</p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/rajan-sita-110b97347/" class="social-link" aria-label="LinkedIn" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/RajanSita" class="social-link" aria-label="GitHub" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#impact">Impact</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <div class="contact-info-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:Civicsoul78@gmail.com">Civicsoul78@gmail.com</a>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/RajanSita" target="_blank">GitHub Repository</a>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>24/7 Support Available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 CivicSoul. All rights reserved. Built with ❤️ by ByteArchitects Group.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
